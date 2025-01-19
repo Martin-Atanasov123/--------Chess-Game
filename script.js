@@ -11,20 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const possibleMoves = game.moves();
 
         if (game.game_over()) {
-            alert("Checkmate!");
+            alert("♛ Checkmate! ♟️");
         } else {
             const randomIdx = Math.floor(Math.random() * possibleMoves.length);
             const move = possibleMoves[randomIdx];
             game.move(move);
             board.position(game.fen());
             recordMove(move, moveCount); // Record and display the move with move count
-            moveCount++; // Increament the move count
+            moveCount++; // Increment the move count
         }
     };
 
     // Function to record and display a move in the move history
     const recordMove = (move, count) => {
-        const formattedMove = count % 2 === 1 ? `${Math.ceil(count / 2)}. ${move}` : `${move} -`;
+        const formattedMove = count % 2 === 1 ? `${Math.ceil(count / 2)}. ${move} ♟️` : `${move} - ♜`;
         moveHistory.textContent += formattedMove + ' ';
         moveHistory.scrollTop = moveHistory.scrollHeight; // Auto-scroll to the latest move
     };
@@ -78,19 +78,21 @@ document.addEventListener('DOMContentLoaded', () => {
         moveHistory.textContent = '';
         moveCount = 1;
         userColor = 'w';
+        alert("🔄 New Game Started!");
     });
 
     // Event listener for the "Set Position" button
     document.querySelector('.set-pos').addEventListener('click', () => {
-        const fen = prompt("Enter the FEN notation for the desired position!");
+        const fen = prompt("🛠️ Enter the FEN notation for the desired position!");
         if (fen !== null) {
             if (game.load(fen)) {
                 board.position(fen);
                 moveHistory.textContent = '';
                 moveCount = 1;
                 userColor = 'w';
+                alert("📜 Position Set Successfully!");
             } else {
-                alert("Invalid FEN notation. Please try again.");
+                alert("❌ Invalid FEN notation. Please try again.");
             }
         }
     });
@@ -99,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.flip-board').addEventListener('click', () => {
         board.flip();
         makeRandomMove();
+        alert("🔃 Board Flipped!");
         // Toggle user's color after flipping the board
         userColor = userColor === 'w' ? 'b' : 'w';
     });
