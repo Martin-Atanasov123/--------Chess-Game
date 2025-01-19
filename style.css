@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 
 body{
@@ -16,7 +17,7 @@ body{
 }
 
 .container{
-    background-color: #fff;
+    background-color: #3b3b3b;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -24,6 +25,7 @@ body{
 
 h1{
     text-align: center;
+    color: antiquewhite;
     font-weight: 500;
 }
 
@@ -41,8 +43,8 @@ h1{
 
 button{
     color: #fff;
-    background-color: #000;
-    border: none;
+    background-color: #252323;
+    border: 3px solid #252323;
     width: 120px;
     height: 40px;
     border-radius: 6px;
