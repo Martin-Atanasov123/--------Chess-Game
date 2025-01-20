@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 body{
@@ -16,22 +15,19 @@ body{
     justify-content: center;
     background-color: #585852;
     background-image: url(/img/9262.jpg);
-
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
     background-blend-mode: soft-light;
 
-
 }
 
 .container{
-    background-color: #3b3b3b;
-    
     padding: 2rem;
-    border:9px solid rgb(78, 77, 77);
     border-radius: 20px;
+    border:9px solid rgb(78, 77, 77);
     box-shadow: 0 0 20px rgba(250, 250, 250, 0.527);
+    background-color: #3b3b3b;
 }
 
 h1{
