@@ -67,7 +67,8 @@ button{
 
 button:hover{
     transform: scale(1.15);
-    background-color: #492e2e;
+    background-color: #5e2222;
+    border: none !important;
 }
 
 .move-history{
