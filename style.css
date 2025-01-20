@@ -79,19 +79,21 @@ button:hover{
     height: 100px;
     width: 400px;
     overflow-y: scroll;
- */
+    */
 }
 @media screen and (max-width:768px) {
     body{
         height: 100vh;
         background-image: none !important;
-    }
-
-    h1{
-        font-size: 2rem;
+        
     }
 
     .board{
         width: 100%;
     }
+
+    .buttons{
+        flex-direction: column;
+    }
+
 }
