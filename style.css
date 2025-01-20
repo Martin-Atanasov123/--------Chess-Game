@@ -14,7 +14,11 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #585852;
-    background-image: url(/img/9262.png);
+    /* background-image: url(/img/9262.png);
+    background-image: url(/Chess-Game/img/9262.png);
+    background-image: url(/Chess-Game/img/9262.png); */
+    background-image: url("https://github.com/Martin-Atanasov123/Chess-Game/blob/main/img/9262.png?raw=true");
+
     background-repeat: no-repeat;
     background-position:center;
     background-size:cover;
